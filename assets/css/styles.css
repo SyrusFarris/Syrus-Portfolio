@@ -96,7 +96,8 @@ header nav ul li a {
 
 }
 .main-project {
-    border: 3px solid black;
+    position: relative;
+    border: 2px solid black;
     width: 500px;
     height: 500px;
     margin: 0 auto 30px auto;
@@ -104,6 +105,19 @@ header nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     flex: 1;
+    overflow: hidden;
+}
+.project-text {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    height: 85px;
+    background-color: var( --ice-cold);
+    font-size: 17px;
+    font-weight: bold;
+
 }
 .test {
     width: 100%;
@@ -171,3 +185,96 @@ Footer nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Footer End */
+
+  /* Media Queries For Smaller Desktop Screens And Smaller */
+
+  @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+    .hero-cta {
+        text-align: center;
+    }
+    .section-title {
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .hero-form {
+        width: 100%;
+    }   
+    .section-title {
+        width: 100%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
+}
