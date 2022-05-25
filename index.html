@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syrus Farris' Portfolio</title>
+    <title>Syrus Farris</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
     <!--Navigation-->
- <header>
+ <header id="home">
     <h1>
-        <p>Syrus' Portfolio</p>
+        <p>Syrus Farris</p>
     </h1>
     <nav>
         <ul>
@@ -30,40 +30,77 @@
  </header>
 
     <!-- about me section -->
-    <section id="about-me">
-        <h1>About Me</h1>
+    <section id="about-me" class="about-me">
+        <div class="flex-row"> 
+            <h1>About Me</h1>
+        </div>
+        <div class="section-text">
             <p>Hi! I'm an aspiring web developer who continues to learn more every single day. I currently have a bachelors degree in 
-                Social Work and work with young adults with disabilities as Career Case Manager. Weelcome to my small corner of the world wide web!
+                Social Work and work with young adults with disabilities as Career Case Manager. Welcome to my small corner of the world wide web!
                 I hope you like what you see!
             </p>
+        </div>
+        <div class="about-img">
+            <img src="./assets/img/selfie.jpg.jpg" alt="Headshot" width="500" height="500">
+        </div>   
     </section>
 
-    <!-- about me section -->
-    <Section id="projects" class="project-section">
-        <h1>Projects</h1>
+    <!-- project section -->
+    <Section id="my-work" class="project-section">
+        <div class="flex-row">
+            <h1>Projects</h1>
+        </div>
+        <div class="section-text">
             <p>Here are some of the projects I have worked on! I have used HTML, CSS, Javascript, GitHub, and many more developer tools 
                 to create these projects.
             </p>
+        </div>
         <div class="main-project"></div>
         <div class="test">   
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
-        <div>
+        </div>
     </section>
 
-    <!-- about me section -->
-    <section id="contact" class="contact-me">
-        <h1>Contact Me</h1>
-            <p> below is the best way to reach me 
+    <!-- contact section -->
+    <section id="contact-me" class="contact-me">
+        <div class="flex-row">
+            <h1>Contact Me</h1>
+        </div>
+        <div>
+            <p> 
+                phone: (254) 247-7425 
             </P>
+            <p>
+                email: syrusfarris@gmail.com
+            </p>
+        </div>
     </section>
 
 
     <!-- footer section-->
     <footer>
-        <h2> Thank you for your time!</h2>
+        <div class="thank-you">
+            <h2> Thank you for your time!</h2>
+        </div>
+
+        <div class="contact-links">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#git-hub">Github</a>
+                    </li>
+                    <li>
+                        <a href="#email">Email</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
 </body>
