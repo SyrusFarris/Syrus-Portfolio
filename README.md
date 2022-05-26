@@ -27,4 +27,5 @@ I was struggling to create text boxes inside of the place holder projects. I att
 
 MediaQeury was a struggle as well. I need to practice and research this more for future updates. I manage to get a lot of the content in my portfolio to scale when screen resolution is changed, but not on a adequate level or a level I am comfortable with.!
 
-[Syrus' Portfolio](https://user-images.githubusercontent.com/103550887/170410838-843db8c6-2c4d-4d1f-aaa3-62a464cd63a6.png)
+![Syrus' Portfolio](https://user-images.githubusercontent.com/103550887/170410928-f1d71795-c7d4-4a34-9b15-9dc8aac7be5d.png)
+
