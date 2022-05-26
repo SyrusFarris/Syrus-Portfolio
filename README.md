@@ -25,4 +25,6 @@ This portfolio currently only contains 1 bootcamp project and the rest of the im
 # Difficulties
 I was struggling to create text boxes inside of the place holder projects. I attempted to create title text boxes for all the projects in grandparent/parent/child div's but can't quite figure out how yet. I also attempted to try to seperate my sections even more to make only parent/child levels. This seemed to work at first but I then ran into the problem of trying to figure out how to align all of the seperating sections and divs horizontally. I will have to research more on how to achieve this for future updates.
 
-MediaQeury was a struggle as well. I need to practice and research this more for future updates. I manage to get a lot of the content in my portfolio to scale when screen resolution is changed, but not on a adequate level or a level I am comfortable with.
+MediaQeury was a struggle as well. I need to practice and research this more for future updates. I manage to get a lot of the content in my portfolio to scale when screen resolution is changed, but not on a adequate level or a level I am comfortable with.!
+
+[Syrus' Portfolio](https://user-images.githubusercontent.com/103550887/170410838-843db8c6-2c4d-4d1f-aaa3-62a464cd63a6.png)
