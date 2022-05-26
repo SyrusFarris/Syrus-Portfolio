@@ -23,11 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
+    top: 0;
     z-index: 9999;
 }
 header h1 {
@@ -64,6 +60,7 @@ header nav ul li a {
     border-color: var( --heavy-purple);
 }
 .section-text {
+    margin: 0 5px 0 5px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -75,31 +72,33 @@ header nav ul li a {
     justify-content: center;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
 }
 .about-img {
     justify-content: center;
     display: flex;
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     width: 30%;
 }
 
 /* About Me Section End */
 
 /* Projects Section Start */
+.project-section {
+    position: relative;
+}
 .project-section p {
-    margin: 40px 0 40px 0;
+    margin: 40px 5px 40px 5px;
     justify-content: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
 }
 .main-project {
     position: relative;
     border: 2px solid black;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     margin: 0 auto 30px auto;
     display: flex;
     flex-wrap: wrap;
@@ -107,25 +106,31 @@ header nav ul li a {
     flex: 1;
     overflow: hidden;
 }
+.main-project img {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
 .project-text {
     display: inline-block;
     position: absolute;
-    bottom: 0px;
+    bottom: 100px;
     left: 0px;
     width: 100px;
     height: 85px;
     background-color: var( --ice-cold);
     font-size: 17px;
     font-weight: bold;
-
 }
-.test {
+.secondary-projects {
+    display: inline-block;
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex: 1;
+    overflow: hidden;
 }
 .project {
     border: 3px solid black;
@@ -135,9 +140,15 @@ header nav ul li a {
     background: var(--heavy-purple);
     display: flex;
     flex: wrap;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     float: left;
+    overflow: hidden;
+}
+.secondary-project img {
+    justify-content: center;
+    display: flex;
+    width: 100%;
 }
 /* Project Section End */
 
@@ -162,6 +173,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 Footer h2 {
     font-weight: bold;
@@ -170,7 +184,7 @@ Footer h2 {
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-Footer nav ul {
+footer nav ul {
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -178,7 +192,7 @@ Footer nav ul {
     align-items: center;
     list-style: none;
 }
-Footer nav ul li a {
+footer nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -186,9 +200,12 @@ Footer nav ul li a {
 }
 /* Footer End */
 
-  /* Media Queries For Smaller Desktop Screens And Smaller */
+/* Media Queries For Smaller Desktop Screens And Smaller */
 
-  @media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) {
+    * {
+        justify-content: center;
+    }
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -210,71 +227,39 @@ Footer nav ul li a {
         text-align: center;
         width: 100%;
     }
-    .hero-cta, .hero-form {
-        width: 100%;
-    }
-    .hero-cta {
-        text-align: center;
-    }
-    .section-title {
-        width: 80%;
-    }
-    .trainer {
-        flex: 0 70%;
-    }
-    .contact-info iframe {
-        flex: 1 100%;
-    }
 }
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
+    * {
         justify-content: center;
     }
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .step-text {
-        flex: 100%;
+    .section-text {
+        width: 100%;
+        text-align: center;
     }
 }
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    .hero-form {
-        width: 100%;
-    }   
-    .section-title {
-        width: 100%;
+    * {
+        justify-content: center;
     }
-    .intro p {
+    
+    .main-project {
         width: 100%;
     }
-    .trainer {
-        flex: 0 100%;
+    .about-me img {
+        margin: auto;
+        max-width: 375px;
     }
-    .contact-info {
-        text-align: center;
+    .footer-nav nav ul {
+        margin-top: 20px;
+        width: 100%;
     }
-    .contact-info > * {
-        flex: 0 100%;
-    }
-    .contact-form {
-        order: 3;
+    .footer p {
+        font-size: 20px;
     }
 }
